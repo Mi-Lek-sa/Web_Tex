@@ -176,3 +176,114 @@ footer{
     clip: rect(0 0 0 0);
     overflow: hidden;
 }
+
+.contact {
+    display: block;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.contact li {
+    display: inline-block;
+    margin: 0;
+
+}
+
+.contact-link {
+    display: block;
+    height: 30px;
+    padding: 5px;
+    padding-left: 42px;
+    background-repeat: no-repeat;
+    text-decoration: none;
+    color: var(--txt-color);
+}
+
+.contact-link:hover{
+    color: var(--green);}
+
+
+.contact-link_phone {
+    background-image: url('../img/icon=phone.svg');
+}
+
+.contact-link_mail {
+    background-image: url('../img/icon=email.svg');
+}
+
+.intro img{
+    border-radius: 50%
+}
+
+.skill-list {
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+}
+
+.skill-list dt {
+    margin-bottom: 6px;
+    padding: 5px 0 5px 38px;
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: 30px;
+}
+
+.skil-level {
+    margin: 4px 0 20px;
+    padding: 2px;
+    font-size: 0;
+    border: 1px solid var(--txt-color);
+    border-radius: 16px;
+}
+
+.skil-level div {
+    height: 14px;
+    background-color: var(--green);
+    border-radius: 8px;
+}
+
+.skill-item {
+    text-transform: lowercase;
+}
+
+.skill-item_html {
+    background-image: url("../img/html.svg");
+}
+
+.skill-item_css {
+    background-image: url("../img/css.svg");
+}
+
+.skill-item_python {
+    background-image: url("../img/python.svg");
+}
+.skill-item_cpp {
+    background-image: url("../img/c++.svg");
+}
+
+.skill-item_csharp {
+    background-image: url("../img/csharp.svg");
+}
+
+.skill-item_golang {
+    background-image: url("../img/golang.svg");
+}
+
+.skill-item_figma {
+    background-image: url("../img/figma.svg");
+}
+
+.skill-item_english {
+    background-image: url("../img/english.svg");
+}
+
+.skill-item_france {
+    background-image: url("../img/france.svg");
+}
+
+.skill-item_japan {
+    background-image: url("../img/japan.svg");
+}
+
