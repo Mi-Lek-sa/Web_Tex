@@ -8,11 +8,9 @@
 body {
     font-family: "Open Sans", "Arial", sans-serif;
     font-weight: 400;
-    font-style: Regular;
     font-size: 20px;
-    leading-trim: NONE;
     line-height: 150%;
-    letter-spacing: 0%;
+
 
     margin: 0;
     padding: 0;
@@ -25,9 +23,8 @@ h1{
     font-weight: 700;
     font-style: Bold;
     font-size: 60px;
-    leading-trim: NONE;
     line-height: 110%;
-    letter-spacing: 0%;
+
 }
 
 h2{
@@ -35,9 +32,7 @@ h2{
     font-weight: 700;
     font-style: Bold;
     font-size: 30px;
-    leading-trim: NONE;
     line-height: 120%;
-    letter-spacing: 0%;
 }
 
 h3{
@@ -45,29 +40,39 @@ h3{
     font-weight: 700;
     font-style: Bold;
     font-size: 24px;
-    leading-trim: NONE;
     line-height: 120%;
-    letter-spacing: 0%;
+
 }
 
 button{
     font-family: "Open Sans", "Arial", sans-serif;
     font-weight: 400;
-    font-style: Regular;
     font-size: 20px;
-    leading-trim: NONE;
     line-height: 100%;
     letter-spacing: 0%;
+
+    text-transform: lowercase;
+    padding: 12px 24px;
+    border: 1px solid var(--gray-border);
+    border-radius: 8px;
+    color: var(--txt-color);
+    background-color: var(--bg-color);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    color: var(--bg-color);
+    background-color: var(--green);
+    border-color: var(--green);
 }
 
 a{
     font-family: "Open Sans", "Arial", sans-serif;
     font-weight: 400;
-    font-style: Regular;
     font-size: 20px;
-    leading-trim: NONE;
     line-height: 100%;
-    letter-spacing: 0%;
+
 }
 
 footer{
@@ -78,10 +83,9 @@ footer{
 .subtitle {
     font-family: "Open Sans", "Arial", sans-serif;
     font-weight: 400;
-    font-style: Regular;
     font-size: 24px;
     line-height: 130%;
-    letter-spacing: 0%;
+
 }
 
 .container{
@@ -95,4 +99,22 @@ footer{
     --txt-color: #212121;
     --green: #09A494;
     --bg-color: #FFFFFF;
+}
+
+.main-header {
+    padding: 20px 0;
+    background-color: var(--bg-color);
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.main-nav a {
+    display: inline-block;
+    text-decoration: none;
+    padding: 12px 20px;
+    color: var(--txt-color);
+    transition: color 0.3s ease;
+}
+
+.main-nav a:hover {
+    color: var(--green);
 }
