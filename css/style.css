@@ -53,9 +53,9 @@ button{
 
     text-transform: lowercase;
     padding: 12px 24px;
-    border: 1px solid var(--gray-border);
+    border: 1px solid var(--green);
     border-radius: 8px;
-    color: var(--txt-color);
+    color: var(--green);
     background-color: var(--bg-color);
     cursor: pointer;
     transition: all 0.3s ease;
@@ -83,8 +83,9 @@ footer{
 .subtitle {
     font-family: "Open Sans", "Arial", sans-serif;
     font-weight: 400;
-    font-size: 24px;
-    line-height: 130%;
+    font-size: 38px;
+    line-height: 120%;
+    color: var(--green);
 
 }
 
@@ -127,7 +128,7 @@ footer{
 
 .social li {
     display: inline-block;
-    margin: 0;
+    margin: 0 5px;
     padding: 0;
 
 }
@@ -136,7 +137,7 @@ footer{
     display: block;
     width: 30px;
     height: 30px;
-    border: 1px solid var(--gray-border);
+    border: 1px solid var(--green);
     border-radius: 50%;
     background-repeat: no-repeat;
     background-position: center;
@@ -286,4 +287,14 @@ footer{
 .skill-item_japan {
     background-image: url("../img/japan.svg");
 }
+.skills div {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+}
 
+.skills div button {
+    margin: 0;
+}
