@@ -106,8 +106,13 @@ a {
 
 .main-header {
     display: flex;
-    padding: 60px 0 20px;
     background-color: var(--bg-color);
+    align-items: flex-end;
+    height: 120px;
+}
+
+.main-header >div {
+    display: flex;
     gap: 40px;
 }
 
@@ -133,14 +138,15 @@ a {
 }
 
 .social {
+    display: flex;
     margin: 0;
     padding: 0;
-    list-style-type: none;
+    gap: 20px;
 }
 
 .social li {
     display: inline-block;
-    margin: 0 5px;
+    margin: 0;
     padding: 0;
 
 }
@@ -190,10 +196,11 @@ a {
 }
 
 .contact {
-    display: block;
+    display: flex;
     margin: 0;
     padding: 0;
-    list-style-type: none;
+    gap: 40px;
+    margin-bottom: 40px;
 }
 
 .contact li {
@@ -304,11 +311,23 @@ a {
 .skill-item_japan {
     background-image: url("../img/japan.svg");
 }
-.skills div {
+
+.skills h2 {
+    margin-bottom: 0;
+}
+
+.skills >div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.skills >div>div {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    gap: 12px;
+    gap: 20 px;
     flex-wrap: wrap;
 }
 
@@ -323,3 +342,8 @@ p {
 p + p {
     margin-top: 15px;
 }
+
+section, .main-header {
+    margin-bottom: 120px;
+}
+
