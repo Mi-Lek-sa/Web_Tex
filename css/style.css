@@ -6,7 +6,7 @@
 
 
 body {
-    font-family: "Open Sans", "Arial", sans-serif;
+    font-family: "Open Sans", sans-serif;
     font-weight: 400;
     font-size: 20px;
     line-height: 150%;
@@ -62,12 +62,21 @@ button:hover {
     background-color: var(--green);
 }
 
-a {
+/* a {
     font-family: "Open Sans", "Arial", sans-serif;
     font-weight: 400;
     font-size: 20px;
     line-height: 100%;
 
+}  */
+
+a:has(.logo) {
+    display: flex;
+}
+
+.logo {
+    width: 60px;
+    height: 60px;
 }
 
 .main-footer{
@@ -108,11 +117,8 @@ a {
     display: flex;
     background-color: var(--bg-color);
     align-items: flex-end;
-    height: 120px;
-}
-
-.main-header >div {
-    display: flex;
+    align-items: center;
+    padding-top: 60px;
     gap: 40px;
 }
 
@@ -237,8 +243,10 @@ a {
     justify-content: space-between;
 }
 
-.intro img{
+.ava {
     border-radius: 50%;
+    height: 400px;
+    width: 400px;
 }
 
 .skill-list {
@@ -347,3 +355,72 @@ section, .main-header {
     margin-bottom: 120px;
 }
 
+@media screen and (max-width: 1024px) {
+    body {
+        font-size: 16px;
+    }
+
+    h1 {
+        font-size: 50px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+    
+    h3 {
+        font-size: 18px;
+    }
+
+    .subtitle {
+        font-size: 28px;
+    }
+    
+    
+
+}
+
+@media screen and (max-width: 650px) {
+    body {
+        font-size: 14px;
+    }
+
+    h1 {
+        font-size: 32px;
+    }
+    
+    h2 {
+        font-size: 20px;
+    }
+    
+    h3 {
+        font-size: 16px;
+    }
+    
+    .subtitle {
+        font-size: 20px;
+    }
+
+    .intro img {
+        width: 40;
+        height: 40;
+    }
+
+    .main-header {
+        flex-direction: column;
+        padding-top: 20px;
+    }
+
+    .main-nav {
+        flex-direction: column;
+    }
+
+    .main-nav a {
+        padding: 20px 30px;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    
+}
